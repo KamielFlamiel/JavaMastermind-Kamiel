@@ -5,54 +5,127 @@ public class Mastermind1 {
 	public static void main(String[] args) {
 		
 		boolean hideBox = true;
+		boolean playerTurn = true;
+        
+        // Breaker = False
+		// Maker = true
+	 
+	    int red = 1;
+		int blue = 2;
+		int yellow = 3;
+		int purple = 4;
+		int green = 5;
+		int orange = 6;
+		int black = 7;
+		int white = 8;
+	    
+	    int makerCombinationAnswer;
 		
-		// B= Breaker van Codebreaker.
-		// M= Maker van Codemaker.
-		
-		int row1B, row2B, row3B, row4B, row5B, row6B, row7B, row8B, row9B, row10B, row11M;
-	    row1B = 1;
-	    row2B = 2;
-	    row3B = 3;
-	    row4B = 4; 
-	    row5B = 5;
-	    row6B = 6;
-	    row7B = 7;
-	    row8B = 8;
-	    row9B = 9;
-	    row10B = 10;
-	    row11M = 11;
-		
-		double space1B, space2B, space3B, space4B, space5M, space6M, space7M, space8M; 
-	    space1B = 1.1;
-	    space2B = 1.2;
-	    space3B = 1.3;
-	    space4B = 1.4;
+	    int breakerRow1Space1;
+	    int breakerRow1Space2;
+	    int breakerRow1Space3;
+	    int breakerRow1Space4;
 	    
-	    space5M = 1.5;
-	    space6M = 1.6;
-	    space7M = 1.7;
-	    space8M = 1.8;
+	    int makerRow1Space1;
+	    int makerRow1Space2;
+	    int makerRow1Space3;
+	    int makerRow1Space4;
 	    
-	    String red = "red";
-	    String blue = "blue";
-	    String purple = "purple";
-	    String yellow = "yellow";
-	    String green = "green";
-	    String orange = "orange";
+	    int breakerRow2Space1;
+	    int breakerRow2Space2;
+	    int breakerRow2Space3;
+	    int breakerRow2Space4;
+	    
+	    int makerRow2Space1;
+	    int makerRow2Space2;
+	    int makerRow2Space3;
+	    int makerRow2Space4;
+	    
+	    int breakerRow3Space1;
+	    int breakerRow3Space2;
+	    int breakerRow3Space3;
+	    int breakerRow3Space4;
+	    
+	    int makerRow3Space1;
+	    int makerRow3Space2;
+	    int makerRow3Space3;
+	    int makerRow3Space4;
+	    
+	    int breakerRow4Space1;
+	    int breakerRow4Space2;
+	    int breakerRow4Space3;
+	    int breakerRow4Space4;
+	    
+	    int makerRow4Space1;
+	    int makerRow4Space2;
+	    int makerRow4Space3;
+	    int makerRow4Space4;
+	    
+	    int breakerRow5Space1;
+	    int breakerRow5Space2;
+	    int breakerRow5Space3;
+	    int breakerRow5Space4;
+	    
+	    int makerRow5Space1;
+	    int makerRow5Space2;
+	    int makerRow5Space3;
+	    int makerRow5Space4;
+	    
+	    int breakerRow6Space1;
+	    int breakerRow6Space2;
+	    int breakerRow6Space3;
+	    int breakerRow6Space4;
+	    
+	    int makerRow7Space1;
+	    int makerRow7Space2;
+	    int makerRow7Space3;
+	    int makerRow7Space4;
+	    
+	    int breakerRow8Space1;
+	    int breakerRow8Space2;
+	    int breakerRow8Space3;
+	    int breakerRow8Space4;
+	   
+	    int makerRow8Space1;
+	    int makerRow8Space2;
+	    int makerRow8Space3;
+	    int makerRow8Space4;
+	    
+	    int breakerRow9Space1;
+	    int breakerRow9Space2;
+	    int breakerRow9Space3;
+	    int breakerRow9Space4;
+	    
+	    int makerRow9Space1;
+	    int makerRow9Space2;
+	    int makerRow9Space3;
+	    int makerRow9Space4;
+	    
+	    int breakerRow10Space1;
+	    int breakerRow10Space2;
+	    int breakerRow10Space3;
+	    int breakerRow10Space4;
+	   
+	    int makerRow10Space1;
+	    int makerRow10Space2;
+	    int makerRow10Space3;
+	    int makerRow10Space4;
+	    
+	
+	     
+	    
+	    breakerRow1Space1 = red;
+	    breakerRow1Space2 = red;
+	    breakerRow1Space3 = red;
+	    breakerRow1Space4 = red;
+	    
+	    makerRow1Space1 = white;
+	    makerRow1Space2 = white;
+	    makerRow1Space3 = white;
+	    makerRow1Space4 = white;
 	    
 	    
-	    // 11  1.1, 1.2, 1.3, 1.4
-	    //
-	    // 10  1.1, 1.2, 1.3, 1.4,    1.5, 1.6, 1.7, 1.8
-	    //  9  1.1, 1.2, 1.3, 1.4,    1.5, 1.6, 1.7, 1.8
-	    //  8  1.1, 1.2, 1.3, 1.4,    1.5, 1.6, 1.7, 1.8
-	    //  7  1.1, 1.2, 1.3, 1.4,    1.5, 1.6, 1.7, 1.8
-	    //  6  1.1, 1.2, 1.3, 1.4,    1.5, 1.6, 1.7, 1.8
-	    //  5  1.1, 1.2, 1.3, 1.4,    1.5, 1.6, 1.7, 1.8
-	    //  4  1.1, 1.2, 1.3, 1.4,    1.5, 1.6, 1.7, 1.8
-	    //  3  1.1, 1.2, 1.3, 1.4,    1.5, 1.6, 1.7, 1.8
-	    //  2  1.1, 1.2, 1.3, 1.4,    1.5, 1.6, 1.7, 1.8
-	    //  1  1.1, 1.2, 1.3, 1.4,    1.5, 1.6, 1.7, 1.8
+	    
 	    
 		
 
