@@ -1,8 +1,12 @@
 package mastermind1;
 
+import java.util.Scanner;
+
 public class Mastermind1 {
 
 	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
 		
 		boolean hideBox = true;
 		boolean playerTurn = true;
@@ -19,8 +23,56 @@ public class Mastermind1 {
 		int black = 7;
 		int white = 8;
 	    
-	    int makerCombinationAnswer;
+		System.out.println("Maker, Create combination.");
+		System.out.println("Red = 1");
+		System.out.println("blue = 2");
+		System.out.println("yellow = 3");
+		System.out.println("Red = 1");
 		
+		
+		
+		
+	    int makerCombinationAnswer1 = sc.nextInt();
+	    int makerCombinationAnswer2 = sc.nextInt();
+	    int makerCombinationAnswer3 = sc.nextInt();
+	    int makerCombinationAnswer4 = sc.nextInt();
+	    
+	    if(makerCombinationAnswer1 > 6) {
+	    	makerCombinationAnswer1 = 6;
+	    }
+	    
+	    if(makerCombinationAnswer1 < 1) {
+	    	makerCombinationAnswer1 = 1;
+	    }
+	    
+	    if(makerCombinationAnswer2 > 6) {
+	    	makerCombinationAnswer2 = 6;
+	    }
+	    
+	    if(makerCombinationAnswer2 < 1) {
+	    	makerCombinationAnswer2 = 1;
+	    }
+	    
+	    if(makerCombinationAnswer3 > 6) {
+	    	makerCombinationAnswer3 = 6;
+	    }
+	    
+	    if(makerCombinationAnswer3 < 1) {
+	    	makerCombinationAnswer3 = 1;
+	    }
+	    
+	    if(makerCombinationAnswer4 > 6) {
+	    	makerCombinationAnswer4 = 6;
+	    }
+	    
+	    if(makerCombinationAnswer4 < 1) {
+	    	makerCombinationAnswer4 = 1;
+	    }
+	    
+	    System.out.println(makerCombinationAnswer1);
+	   
+	
+	    
 	    int breakerRow1Space1;
 	    int breakerRow1Space2;
 	    int breakerRow1Space3;

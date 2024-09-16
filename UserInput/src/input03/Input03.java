@@ -15,22 +15,10 @@ class Input03 {
     	System.out.println(x);
     	System.out.println(y);
     	System.out.println(z);
-        //Find and print the sum of three integers entered by the user
-    	
-
-    	
         
-    	 
-       
-        
-       
-       
-       
-       
-     
         
         sc.close();
-        //Remember to close the Scanner
+    
         
     }
 
