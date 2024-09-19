@@ -9,10 +9,10 @@ public class Mastermind1 {
 		Scanner sc = new Scanner(System.in);
 		
 		boolean hideBox = true;
-		boolean playerTurn = true;
+		boolean makerTurn = true;
+		boolean breakerTurn = false;
         
-        // Breaker = False
-		// Maker = true
+        
 	 
 	    int red = 1;
 		int blue = 2;
@@ -25,10 +25,11 @@ public class Mastermind1 {
 	    
 		System.out.println("Maker, Create combination.");
 		System.out.println("Red = 1");
-		System.out.println("blue = 2");
-		System.out.println("yellow = 3");
-		System.out.println("Red = 1");
-		
+		System.out.println("Blue = 2");
+		System.out.println("Yellow = 3");
+		System.out.println("Purple = 4");
+		System.out.println("Green = 5");
+		System.out.println("Orange = 6");
 		
 		
 		
@@ -70,8 +71,8 @@ public class Mastermind1 {
 	    }
 	    
 	    System.out.println(makerCombinationAnswer1);
-	   
-	
+	    
+	    
 	    
 	    int breakerRow1Space1;
 	    int breakerRow1Space2;
