@@ -20,6 +20,9 @@ public class Mastermind1 {
 		int orange = 6;
 		int black = 7;
 		int white = 8;
+		
+		
+				
 
 		System.out.println("Maker, Create combination.");
 		System.out.println("Red = 1");
@@ -86,6 +89,9 @@ public class Mastermind1 {
 		makerTurn = false;
 		breakerTurn = true;
 		
+		System.out.println(" ");
+		System.out.println(" ");
+		System.out.println(" ");
 		System.out.println("Breaker's turn");
 		System.out.println("Red = 1. "
 				+ "Blue = 2. "
@@ -106,29 +112,44 @@ public class Mastermind1 {
 		breakerRow1Space2 = sc.nextInt();
 		breakerRow1Space3 = sc.nextInt();
 		breakerRow1Space4 = sc.nextInt();
+		
+		int makerRow1Space1 = 0;
+		int makerRow1Space2 = 0;
+		int makerRow1Space3 = 0;
+		int makerRow1Space4 = 0;
 
-		int makerRow1Space1;
-		int makerRow1Space2;
-		int makerRow1Space3;
-		int makerRow1Space4;
-
-		if (breakerRow1Space1 = makerCombinationAnswer1) {
-			makerRow1Space1 = white;
-			
-		}
-		
-		if (breakerRow1Space2 = makerCombinationAnswer2) {
+		if (breakerRow1Space1 == makerCombinationAnswer1) {
 			makerRow1Space1 = white;
 		}
 		
-		if (breakerRow1Space3 = makerCombinationAnswer2) {
-			makerRow1Space1 = white;
+		else makerRow1Space1 = black;
+		
+		if (breakerRow1Space2 == makerCombinationAnswer2) {
+			makerRow1Space2 = white;
 		}
 		
-		if (breakerRow1Space4 = makerCombinationAnswer4) {
-			makerRow1Space1 = white;
+		else makerRow1Space2 = black;
+		
+		if (breakerRow1Space3 == makerCombinationAnswer2) {
+			makerRow1Space3 = white;
 		}
 		
+		else makerRow1Space3 = black;
+		
+		if (breakerRow1Space4 == makerCombinationAnswer4) {
+			makerRow1Space4 = white;
+		}
+		
+		else makerRow1Space4 = black;
+		
+		System.out.println("8 is white and 7 is black");
+		System.out.println("if a space is white then you guessed right, if it's black then it's wrong.");
+		System.out.println("" + makerRow1Space1 + makerRow1Space2 + makerRow1Space3 + makerRow1Space4);
+		
+		
+		if (makerRow1Space1 ==white && makerRow1Space2 && makerRow1Space3 && makerRow1Space4) {
+			System.out.println("Breaker wins.");
+		}
 		
 		int breakerRow2Space1;
 		int breakerRow2Space2;
