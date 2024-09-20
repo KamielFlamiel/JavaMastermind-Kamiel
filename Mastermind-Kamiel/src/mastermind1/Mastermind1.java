@@ -79,12 +79,7 @@ public class Mastermind1 {
 			verify = sc.next();
 		} while (!verify.equals("1"));
 
-		if (hideBox == true) {
-			makerCombinationAnswer1 = 0;
-			makerCombinationAnswer2 = 0;
-			makerCombinationAnswer3 = 0;
-			makerCombinationAnswer4 = 0;
-		}
+		
 		
 		System.out.println("" +makerCombinationAnswer1 +makerCombinationAnswer2 +makerCombinationAnswer3 +makerCombinationAnswer4);
 		
@@ -117,6 +112,24 @@ public class Mastermind1 {
 		int makerRow1Space3;
 		int makerRow1Space4;
 
+		if (breakerRow1Space1 = makerCombinationAnswer1) {
+			makerRow1Space1 = white;
+			
+		}
+		
+		if (breakerRow1Space2 = makerCombinationAnswer2) {
+			makerRow1Space1 = white;
+		}
+		
+		if (breakerRow1Space3 = makerCombinationAnswer2) {
+			makerRow1Space1 = white;
+		}
+		
+		if (breakerRow1Space4 = makerCombinationAnswer4) {
+			makerRow1Space1 = white;
+		}
+		
+		
 		int breakerRow2Space1;
 		int breakerRow2Space2;
 		int breakerRow2Space3;
