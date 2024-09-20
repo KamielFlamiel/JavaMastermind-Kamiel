@@ -2,8 +2,6 @@ package mastermind1;
 
 import java.util.Scanner;
 
-import javax.sound.midi.MidiSystem;
-
 public class Mastermind1 {
 
 	public static void main(String[] args) {
@@ -113,6 +111,38 @@ public class Mastermind1 {
 		int makerRow1Space2 = 0;
 		int makerRow1Space3 = 0;
 		int makerRow1Space4 = 0;
+			
+		if (breakerRow1Space1 > 6) {
+			breakerRow1Space1 = 6;
+		}
+
+		if (breakerRow1Space1 < 1) {
+			breakerRow1Space1 = 1;
+		}
+
+		if (breakerRow1Space2 > 6) {
+			breakerRow1Space2 = 6;
+		}
+
+		if (breakerRow1Space2 < 1) {
+			breakerRow1Space2 = 1;
+		}
+
+		if (breakerRow1Space3 > 6) {
+			breakerRow1Space3 = 6;
+		}
+
+		if (breakerRow1Space3 < 1) {
+			breakerRow1Space3 = 1;
+		}
+
+		if (breakerRow1Space4 > 6) {
+			breakerRow1Space4 = 6;
+		}
+
+		if (breakerRow1Space4 < 1) {
+			breakerRow1Space4 = 1;
+		}
 		
 		System.out.println("" + breakerRow1Space1 + breakerRow1Space2 + breakerRow1Space3 + breakerRow1Space4);
 
@@ -179,6 +209,38 @@ public class Mastermind1 {
 		int makerRow2Space3 = 0;
 		int makerRow2Space4 = 0;
 		
+		if (breakerRow2Space1 > 6) {
+			breakerRow2Space1 = 6;
+		}
+
+		if (breakerRow2Space1 < 1) {
+			breakerRow2Space1 = 1;
+		}
+
+		if (breakerRow2Space2 > 6) {
+			breakerRow2Space2 = 6;
+		}
+
+		if (breakerRow2Space2 < 1) {
+			breakerRow2Space2 = 1;
+		}
+
+		if (breakerRow2Space3 > 6) {
+			breakerRow2Space3 = 6;
+		}
+
+		if (breakerRow2Space3 < 1) {
+			breakerRow2Space3 = 1;
+		}
+
+		if (breakerRow2Space4 > 6) {
+			breakerRow2Space4 = 6;
+		}
+
+		if (breakerRow2Space4 < 1) {
+			breakerRow2Space4 = 1;
+		}
+		
 		System.out.println("" + breakerRow2Space1 + breakerRow2Space2 + breakerRow2Space3 + breakerRow2Space4);
 		
 		if (breakerRow2Space1 == makerCombinationAnswer1) {
@@ -242,6 +304,38 @@ public class Mastermind1 {
 		int makerRow3Space2 = 0;
 		int makerRow3Space3 = 0;
 		int makerRow3Space4 = 0;
+		
+		if (breakerRow3Space1 > 6) {
+			breakerRow3Space1 = 6;
+		}
+
+		if (breakerRow3Space1 < 1) {
+			breakerRow3Space1 = 1;
+		}
+
+		if (breakerRow3Space2 > 6) {
+			breakerRow3Space2 = 6;
+		}
+
+		if (breakerRow3Space2 < 1) {
+			breakerRow3Space2 = 1;
+		}
+
+		if (breakerRow3Space3 > 6) {
+			breakerRow3Space3 = 6;
+		}
+
+		if (breakerRow3Space3 < 1) {
+			breakerRow3Space3 = 1;
+		}
+
+		if (breakerRow3Space4 > 6) {
+			breakerRow3Space4 = 6;
+		}
+
+		if (breakerRow3Space4 < 1) {
+			breakerRow3Space4 = 1;
+		}
 		
 		System.out.println("" + breakerRow3Space1 + breakerRow3Space2 + breakerRow3Space3 + breakerRow3Space4);
 		
@@ -307,6 +401,38 @@ public class Mastermind1 {
 		int makerRow4Space3 = 0;
 		int makerRow4Space4 = 0;
 		
+		if (breakerRow4Space1 > 6) {
+			breakerRow4Space1 = 6;
+		}
+
+		if (breakerRow4Space1 < 1) {
+			breakerRow4Space1 = 1;
+		}
+
+		if (breakerRow4Space2 > 6) {
+			breakerRow4Space2 = 6;
+		}
+
+		if (breakerRow4Space2 < 1) {
+			breakerRow4Space2 = 1;
+		}
+
+		if (breakerRow4Space3 > 6) {
+			breakerRow4Space3 = 6;
+		}
+
+		if (breakerRow4Space3 < 1) {
+			breakerRow4Space3 = 1;
+		}
+
+		if (breakerRow4Space4 > 6) {
+			breakerRow4Space4 = 6;
+		}
+
+		if (breakerRow4Space4 < 1) {
+			breakerRow4Space4 = 1;
+		}
+		
 		System.out.println("" + breakerRow4Space1 + breakerRow4Space2 + breakerRow4Space3 + breakerRow4Space4);
 		
 		if (breakerRow4Space1 == makerCombinationAnswer1) {
@@ -370,6 +496,38 @@ public class Mastermind1 {
 		int makerRow5Space2 = 0;
 		int makerRow5Space3 = 0;
 		int makerRow5Space4 = 0;
+		
+		if (breakerRow5Space1 > 6) {
+			breakerRow5Space1 = 6;
+		}
+
+		if (breakerRow5Space1 < 1) {
+			breakerRow5Space1 = 1;
+		}
+
+		if (breakerRow5Space2 > 6) {
+			breakerRow5Space2 = 6;
+		}
+
+		if (breakerRow5Space2 < 1) {
+			breakerRow5Space2 = 1;
+		}
+
+		if (breakerRow5Space3 > 6) {
+			breakerRow5Space3 = 6;
+		}
+
+		if (breakerRow5Space3 < 1) {
+			breakerRow5Space3 = 1;
+		}
+
+		if (breakerRow5Space4 > 6) {
+			breakerRow5Space4 = 6;
+		}
+
+		if (breakerRow5Space4 < 1) {
+			breakerRow5Space4 = 1;
+		}
 		
 		System.out.println("" + breakerRow5Space1 + breakerRow5Space2 + breakerRow5Space3 + breakerRow5Space4);
 		
@@ -435,6 +593,38 @@ public class Mastermind1 {
 		int makerRow6Space3 = 0;
 		int makerRow6Space4 = 0;
 		
+		if (breakerRow6Space1 > 6) {
+			breakerRow6Space1 = 6;
+		}
+
+		if (breakerRow6Space1 < 1) {
+			breakerRow6Space1 = 1;
+		}
+
+		if (breakerRow6Space2 > 6) {
+			breakerRow6Space2 = 6;
+		}
+
+		if (breakerRow6Space2 < 1) {
+			breakerRow6Space2 = 1;
+		}
+
+		if (breakerRow6Space3 > 6) {
+			breakerRow6Space3 = 6;
+		}
+
+		if (breakerRow6Space3 < 1) {
+			breakerRow6Space3 = 1;
+		}
+
+		if (breakerRow6Space4 > 6) {
+			breakerRow6Space4 = 6;
+		}
+
+		if (breakerRow6Space4 < 1) {
+			breakerRow6Space4 = 1;
+		}
+		
 		System.out.println("" + breakerRow6Space1 + breakerRow6Space2 + breakerRow6Space3 + breakerRow6Space4);
 		
 		if (breakerRow6Space1 == makerCombinationAnswer1) {
@@ -498,6 +688,38 @@ public class Mastermind1 {
 		int makerRow7Space2 = 0;
 		int makerRow7Space3 = 0;
 		int makerRow7Space4 = 0;
+		
+		if (breakerRow7Space1 > 6) {
+			breakerRow7Space1 = 6;
+		}
+
+		if (breakerRow7Space1 < 1) {
+			breakerRow7Space1 = 1;
+		}
+
+		if (breakerRow7Space2 > 6) {
+			breakerRow7Space2 = 6;
+		}
+
+		if (breakerRow7Space2 < 1) {
+			breakerRow7Space2 = 1;
+		}
+
+		if (breakerRow7Space3 > 6) {
+			breakerRow7Space3 = 6;
+		}
+
+		if (breakerRow7Space3 < 1) {
+			breakerRow7Space3 = 1;
+		}
+
+		if (breakerRow7Space4 > 6) {
+			breakerRow7Space4 = 6;
+		}
+
+		if (breakerRow7Space4 < 1) {
+			breakerRow7Space4 = 1;
+		}
 		
 		System.out.println("" + breakerRow7Space1 + breakerRow7Space2 + breakerRow7Space3 + breakerRow7Space4);
 		
@@ -563,6 +785,38 @@ public class Mastermind1 {
 		int makerRow8Space3 = 0;
 		int makerRow8Space4 = 0;
 		
+		if (breakerRow8Space1 > 6) {
+			breakerRow8Space1 = 6;
+		}
+
+		if (breakerRow8Space1 < 1) {
+			breakerRow8Space1 = 1;
+		}
+
+		if (breakerRow8Space2 > 6) {
+			breakerRow8Space2 = 6;
+		}
+
+		if (breakerRow8Space2 < 1) {
+			breakerRow8Space2 = 1;
+		}
+
+		if (breakerRow8Space3 > 6) {
+			breakerRow8Space3 = 6;
+		}
+
+		if (breakerRow8Space3 < 1) {
+			breakerRow8Space3 = 1;
+		}
+
+		if (breakerRow8Space4 > 6) {
+			breakerRow8Space4 = 6;
+		}
+
+		if (breakerRow1Space4 < 1) {
+			breakerRow1Space4 = 1;
+		}
+		
 		System.out.println("" + breakerRow8Space1 + breakerRow8Space2 + breakerRow8Space3 + breakerRow8Space4);
 		
 		if (breakerRow8Space1 == makerCombinationAnswer1) {
@@ -626,6 +880,38 @@ public class Mastermind1 {
 		int makerRow9Space2 = 0;
 		int makerRow9Space3 = 0;
 		int makerRow9Space4 = 0;
+		
+		if (breakerRow9Space1 > 6) {
+			breakerRow9Space1 = 6;
+		}
+
+		if (breakerRow9Space1 < 1) {
+			breakerRow9Space1 = 1;
+		}
+
+		if (breakerRow9Space2 > 6) {
+			breakerRow9Space2 = 6;
+		}
+
+		if (breakerRow9Space2 < 1) {
+			breakerRow9Space2 = 1;
+		}
+
+		if (breakerRow9Space3 > 6) {
+			breakerRow9Space3 = 6;
+		}
+
+		if (breakerRow9Space3 < 1) {
+			breakerRow9Space3 = 1;
+		}
+
+		if (breakerRow9Space4 > 6) {
+			breakerRow9Space4 = 6;
+		}
+
+		if (breakerRow9Space4 < 1) {
+			breakerRow9Space4 = 1;
+		}
 		
 		System.out.println("" + breakerRow9Space1 + breakerRow9Space2 + breakerRow9Space3 + breakerRow9Space4);
 		
@@ -695,6 +981,38 @@ public class Mastermind1 {
 		int makerRow10Space3 = 0;
 		int makerRow10Space4 = 0;
 		
+		if (breakerRow10Space1 > 6) {
+			breakerRow10Space1 = 6;
+		}
+
+		if (breakerRow10Space1 < 1) {
+			breakerRow10Space1 = 1;
+		}
+
+		if (breakerRow10Space2 > 6) {
+			breakerRow10Space2 = 6;
+		}
+
+		if (breakerRow10Space2 < 1) {
+			breakerRow10Space2 = 1;
+		}
+
+		if (breakerRow10Space3 > 6) {
+			breakerRow10Space3 = 6;
+		}
+
+		if (breakerRow10Space3 < 1) {
+			breakerRow10Space3 = 1;
+		}
+
+		if (breakerRow10Space4 > 6) {
+			breakerRow10Space4 = 6;
+		}
+
+		if (breakerRow10Space4 < 1) {
+			breakerRow10Space4 = 1;
+		}
+		
 		if (breakerRow10Space1 == makerCombinationAnswer1) {
 			makerRow10Space1 = white;
 		}
@@ -724,7 +1042,9 @@ public class Mastermind1 {
 			System.out.println("Breaker wins.");
 		}
 		
-		else System.out.println("Out of turns, Maker wins.");
+		else System.out.println("Wrong");
+			System.out.println("Out of turns, Maker wins.");
+			System.out.println("Combination is " + makerCombinationAnswer1 + makerCombinationAnswer2 + makerCombinationAnswer3 + makerCombinationAnswer4);
 
 	}
 
