@@ -8,16 +8,6 @@ public class Mastermind1 {
 
 		Scanner sc = new Scanner(System.in);
 
-		boolean hideBox = true;
-		boolean makerTurn = true;
-		boolean breakerTurn = false;
-
-		int red = 1;
-		int blue = 2;
-		int yellow = 3;
-		int purple = 4;
-		int green = 5;
-		int orange = 6;
 		int black = 7;
 		int white = 8;
 		
@@ -82,9 +72,7 @@ public class Mastermind1 {
 
 		System.out.println("" +makerCombinationAnswer1 +makerCombinationAnswer2 +makerCombinationAnswer3 +makerCombinationAnswer4);
 		
-		makerTurn = false;
-		breakerTurn = true;
-		
+	
 		System.out.println(" ");
 		System.out.println("Breaker's turn");
 		System.out.println("Red = 1. "
