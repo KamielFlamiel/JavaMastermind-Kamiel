@@ -72,7 +72,7 @@ public class Mastermind1 {
 
 		System.out.println("" +makerCombinationAnswer1 +makerCombinationAnswer2 +makerCombinationAnswer3 +makerCombinationAnswer4);
 		
-	
+	    
 		System.out.println(" ");
 		System.out.println("Breaker's turn");
 		System.out.println("Red = 1. "
