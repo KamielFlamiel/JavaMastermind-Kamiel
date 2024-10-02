@@ -5,12 +5,9 @@ public class Flowchart_mastermind {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int black;
-
-        black = 7;
-        int white;
-
-        white = 8;
+        int black = 7;
+        int white = 8;
+ 
         System.out.println("Maker, Create combination.");
         System.out.println("Red = 1");
         System.out.println("Blue = 2");

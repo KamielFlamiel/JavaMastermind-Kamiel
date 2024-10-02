@@ -29,7 +29,7 @@ public class SumofNums {
         System.out.print("Enter a number, you only have 10 inputs: ");
         
         for (int round = 0; round <= 9; round++) {
-        	System.out.print("Enter a number: ");
+        	System.out.print("Enter a number: ");  
         	int number = console.nextInt();
         	sum = sum + number;
 		}
