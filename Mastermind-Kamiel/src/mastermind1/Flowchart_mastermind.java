@@ -74,9 +74,9 @@ public class Flowchart_mastermind {
 				breakerSpaces[i] = in;
 			}
 			System.out.println("" + breakerSpaces[0] + breakerSpaces[1] + breakerSpaces[2] + breakerSpaces[3]);
-			verify = breakerSpaces[0];
 			
-			// hier
+	
+			verify = breakerSpaces[0];
 			if (verify == makerCombinationAnswer[0]){
 				breakerSpaces[0] = white;
 			
