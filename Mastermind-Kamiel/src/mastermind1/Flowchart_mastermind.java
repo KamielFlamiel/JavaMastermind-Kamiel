@@ -17,15 +17,9 @@ public class Flowchart_mastermind {
 
 		for (int i = 0; i < makerCombinationAnswer.length; i++) {
 			int in = rand.nextInt(6) + 1;
-
-			if (in > 6) {
-				in = 6;
-			}
-			if (in < 1) {
-				in = 1;
-			}
 			makerCombinationAnswer[i] = in;
 		}
+		
 		System.out.println("" + makerCombinationAnswer[0] + makerCombinationAnswer[1] + makerCombinationAnswer[2]
 				+ makerCombinationAnswer[3]);
 
