@@ -31,9 +31,7 @@ public class Flowchart_mastermind {
 
 		System.out.println(" ");
 		System.out.println("The maker has made a combination");
-		System.out
-				.println("Red = 1. " + "Blue = 2. " + "Yellow = 3. " + "Purple = 4. " + "Green = 5. " + "Orange = 6. ");
-
+		System.out.println("Red = 1. " + "Blue = 2. " + "Yellow = 3. " + "Purple = 4. " + "Green = 5. " + "Orange = 6. ");
 		System.out.println("Place a colour you want by pressing the number");
 		System.out.println("Try to guess the Maker's combination");
 
@@ -56,11 +54,9 @@ public class Flowchart_mastermind {
 			System.out.println("" + breakerSpaces[0] + breakerSpaces[1] + breakerSpaces[2] + breakerSpaces[3]);
 
 			int[] checkSpaces = { -1, -1, -1, -1 };
-			// for (int check = 0; check < breakerSpaces.length; check++) {
 
 			verify = breakerSpaces[0];
 
-			// 1e
 			int randomnum = rand.nextInt(4);
 			int check = breakerSpaces[randomnum];
 
@@ -70,8 +66,7 @@ public class Flowchart_mastermind {
 			}
 
 			if (verify == makerCombinationAnswer[0]) {
-				checkSpaces[0] = white; // als makercombination[0] gelijk is aan verify - juiste kleur, juiste
-										// plek
+				checkSpaces[0] = white; 
 			} else {
 				if (verify == makerCombinationAnswer[1] || verify == makerCombinationAnswer[2]
 						|| verify == makerCombinationAnswer[3]) {
@@ -84,7 +79,6 @@ public class Flowchart_mastermind {
 			randomnum = rand.nextInt(4);
 			verify = breakerSpaces[1];
 
-			// 2e
 			if (verify == makerCombinationAnswer[1]) {
 				checkSpaces[1] = white;
 
@@ -100,7 +94,7 @@ public class Flowchart_mastermind {
 			}
 			randomnum = rand.nextInt(4);
 			verify = breakerSpaces[2];
-			// 3e
+			
 			if (verify == makerCombinationAnswer[2]) {
 				checkSpaces[2] = white;
 
@@ -115,7 +109,7 @@ public class Flowchart_mastermind {
 			}
 			randomnum = rand.nextInt(4);
 			verify = breakerSpaces[3];
-			// 4e
+			
 			if (verify == makerCombinationAnswer[3]) {
 				checkSpaces[3] = white;
 			} else {
@@ -126,8 +120,7 @@ public class Flowchart_mastermind {
 				else {
 					checkSpaces[3] = empty;
 				}
-			}
-			// }
+			}	
 
 			System.out.println("8 is white and 7 is black");
 			System.out.println("if a space is white then you guessed right, if it's black then it's right but in the wrong position.");
