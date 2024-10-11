@@ -40,7 +40,6 @@ public class Flowchart_mastermind {
 		int[] breakerSpaces = new int[4];
 		int round = 0;
 		int roundOpposite = 10;
-		int randomSpace;
 
 		do {
 
@@ -65,7 +64,6 @@ public class Flowchart_mastermind {
 			int randomnum = rand.nextInt(4);
 			int check = breakerSpaces[randomnum];
 
-			System.out.println("lol");
 			while (check != -1) {
 				randomnum = rand.nextInt(4);
 				check = checkSpaces[randomnum];
@@ -75,14 +73,15 @@ public class Flowchart_mastermind {
 				checkSpaces[0] = white; // als makercombination[0] gelijk is aan verify - juiste kleur, juiste
 										// plek
 			} else {
-				if (verify != makerCombinationAnswer[1] || verify != makerCombinationAnswer[2]
-						|| verify != makerCombinationAnswer[3]) {
+				if (verify == makerCombinationAnswer[1] || verify == makerCombinationAnswer[2]
+						|| verify == makerCombinationAnswer[3]) {
 
-					checkSpaces[randomnum] = black;
+					checkSpaces[0] = black;
 				} else {
 					checkSpaces[0] = empty;
 				}
 			}
+			randomnum = rand.nextInt(4);
 			verify = breakerSpaces[1];
 
 			// 2e
@@ -90,39 +89,39 @@ public class Flowchart_mastermind {
 				checkSpaces[1] = white;
 
 			} else {
-				if (verify != makerCombinationAnswer[1] || verify != makerCombinationAnswer[2]
-						|| verify != makerCombinationAnswer[3])
-					checkSpaces[randomnum] = black;
+				if (verify == makerCombinationAnswer[1] || verify == makerCombinationAnswer[2]
+						|| verify == makerCombinationAnswer[3])
+					checkSpaces[1] = black;
 
 				else {
 					checkSpaces[1] = empty;
 				}
 
 			}
-
+			randomnum = rand.nextInt(4);
 			verify = breakerSpaces[2];
 			// 3e
 			if (verify == makerCombinationAnswer[2]) {
 				checkSpaces[2] = white;
 
 			} else {
-				if (verify != makerCombinationAnswer[2] || verify != makerCombinationAnswer[2]
-						|| verify != makerCombinationAnswer[3])
-					checkSpaces[randomnum] = black;
+				if (verify == makerCombinationAnswer[1] || verify == makerCombinationAnswer[2]
+						|| verify == makerCombinationAnswer[3])
+					checkSpaces[2] = black;
 
 				else {
 					checkSpaces[2] = empty;
 				}
 			}
-
+			randomnum = rand.nextInt(4);
 			verify = breakerSpaces[3];
 			// 4e
 			if (verify == makerCombinationAnswer[3]) {
 				checkSpaces[3] = white;
 			} else {
-				if (verify != makerCombinationAnswer[3] || verify != makerCombinationAnswer[2]
-						|| verify != makerCombinationAnswer[3])
-					checkSpaces[randomnum] = black;
+				if (verify == makerCombinationAnswer[1] || verify == makerCombinationAnswer[2]
+						|| verify == makerCombinationAnswer[3])
+					checkSpaces[3] = black;
 
 				else {
 					checkSpaces[3] = empty;
@@ -131,7 +130,7 @@ public class Flowchart_mastermind {
 			// }
 
 			System.out.println("8 is white and 7 is black");
-			System.out.println("if a space is white then you guessed right, if it's black then it's wrong.");
+			System.out.println("if a space is white then you guessed right, if it's black then it's right but in the wrong position.");
 			System.out.println("" + checkSpaces[0] + checkSpaces[1] + checkSpaces[2] + checkSpaces[3]);
 
 			if (checkSpaces[0] == white && checkSpaces[1] == white && checkSpaces[2] == white
