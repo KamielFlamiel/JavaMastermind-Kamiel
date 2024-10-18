@@ -20,9 +20,7 @@ public class Flowchart_mastermind {
 			makerCombinationAnswer[i] = in;
 		}
 		
-		System.out.println("" + makerCombinationAnswer[0] + makerCombinationAnswer[1] + makerCombinationAnswer[2]
-				+ makerCombinationAnswer[3]);
-
+		System.out.println("" + makerCombinationAnswer[0] + makerCombinationAnswer[1] + makerCombinationAnswer[2] + makerCombinationAnswer[3]);
 		System.out.println(" ");
 		System.out.println("The maker has made a combination");
 		System.out.println("Red = 1. " + "Blue = 2. " + "Yellow = 3. " + "Purple = 4. " + "Green = 5. " + "Orange = 6. ");
@@ -117,7 +115,7 @@ public class Flowchart_mastermind {
 			}	
 
 			System.out.println("8 is white and 7 is black");
-			System.out.println("if a space is white then you guessed right, if it's black then it's right but in the wrong position.");
+			System.out.println("if a space is white then you guessed right, if it's black then it's right but in the wrong position and if it's empty, then you guessed wrong");
 			System.out.println("" + checkSpaces[0] + checkSpaces[1] + checkSpaces[2] + checkSpaces[3]);
 
 			if (checkSpaces[0] == white && checkSpaces[1] == white && checkSpaces[2] == white
@@ -134,6 +132,8 @@ public class Flowchart_mastermind {
 			System.out.println("You have " + roundOpposite + " tries left");
 
 		} while (round < 10);
+		
+		System.out.println("Out of turns, Maker wins");
 
 	}
 
