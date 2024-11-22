@@ -34,14 +34,15 @@ public class Flowchart_mastermind {
 		do {
 
 			for (int i = 0; i < breakerSpaces.length; i++) {
-				int in = input.nextInt();
+				String in = input.next();
+				int loopInput = Integer.parseInt(in);
 
-				if (in >= 6) {
-					in = 6;
-				} else if (in <= 1) {
-					in = 1;
+				if (loopInput >= 6) {
+					loopInput = 6;
+				} else if (loopInput <= 1) {
+					loopInput = 1;
 				}
-				breakerSpaces[i] = in;
+				breakerSpaces[i] = loopInput;
 			}
 			System.out.println("" + breakerSpaces[0] + breakerSpaces[1] + breakerSpaces[2] + breakerSpaces[3]);
 

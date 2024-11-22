@@ -19,7 +19,7 @@ public class Casting01 {
     	
     	System.out.println(byte2);
 
-    	byte2++;
+    	byte2++; 
     	
     	System.out.println(byte2);
         
