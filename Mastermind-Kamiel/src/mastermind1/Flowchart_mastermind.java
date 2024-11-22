@@ -28,7 +28,7 @@ public class Flowchart_mastermind {
 		System.out.println("Try to guess the Maker's combination");
 
 		int[] breakerSpaces = new int[4];
-		int round = 0;
+		int round = 0; 
 		int roundOpposite = 10;
 
 		do {
