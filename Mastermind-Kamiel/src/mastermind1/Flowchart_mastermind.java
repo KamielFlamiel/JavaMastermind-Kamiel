@@ -48,73 +48,29 @@ public class Flowchart_mastermind {
 
 			int[] checkSpaces = { -1, -1, -1, -1 };
 
-			verify = breakerSpaces[0];
-
 			int randomnum = rand.nextInt(4);
 			int check = breakerSpaces[randomnum];
-
-			while (check != -1) {
+			
+			for (int i = 0; i < checkSpaces.length; i++) {
+				verify = breakerSpaces[i];
 				randomnum = rand.nextInt(4);
-				check = checkSpaces[randomnum];
+				check = breakerSpaces[randomnum];
+				
+				if (verify == makerCombinationAnswer[i]) {
+					checkSpaces[i] = white;
+					
+				} else { 
+					if (verify == makerCombinationAnswer[0] || verify == makerCombinationAnswer[1] || verify == makerCombinationAnswer[2] || verify == makerCombinationAnswer[3]) {
+						checkSpaces[i] = black;
+						
+					} else { 
+						checkSpaces[i] = empty;
+
+					}
+
+				} 
 			}
-
-			if (verify == makerCombinationAnswer[0]) {
-				checkSpaces[0] = white; 
-			} else {
-				if (verify == makerCombinationAnswer[1] || verify == makerCombinationAnswer[2]
-						|| verify == makerCombinationAnswer[3]) {
-
-					checkSpaces[0] = black;
-				} else {
-					checkSpaces[0] = empty;
-				}
-			}
-			randomnum = rand.nextInt(4);
-			verify = breakerSpaces[1];
-
-			if (verify == makerCombinationAnswer[1]) {
-				checkSpaces[1] = white;
-
-			} else {
-				if (verify == makerCombinationAnswer[1] || verify == makerCombinationAnswer[2]
-						|| verify == makerCombinationAnswer[3])
-					checkSpaces[1] = black;
-
-				else {
-					checkSpaces[1] = empty;
-				}
-
-			}
-			randomnum = rand.nextInt(4);
-			verify = breakerSpaces[2];
 			
-			if (verify == makerCombinationAnswer[2]) {
-				checkSpaces[2] = white;
-
-			} else {
-				if (verify == makerCombinationAnswer[1] || verify == makerCombinationAnswer[2]
-						|| verify == makerCombinationAnswer[3])
-					checkSpaces[2] = black;
-
-				else {
-					checkSpaces[2] = empty;
-				}
-			}
-			randomnum = rand.nextInt(4);
-			verify = breakerSpaces[3];
-			
-			if (verify == makerCombinationAnswer[3]) {
-				checkSpaces[3] = white;
-			} else {
-				if (verify == makerCombinationAnswer[1] || verify == makerCombinationAnswer[2]
-						|| verify == makerCombinationAnswer[3])
-					checkSpaces[3] = black;
-
-				else {
-					checkSpaces[3] = empty;
-				}
-			}	
-
 			System.out.println("8 is white and 7 is black");
 			System.out.println("if a space is white then you guessed right, if it's black then it's right but in the wrong position and if it's empty, then you guessed wrong");
 			System.out.println("" + checkSpaces[0] + checkSpaces[1] + checkSpaces[2] + checkSpaces[3]);
