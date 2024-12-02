@@ -21,7 +21,7 @@ public class Flowchart_mastermind {
 		}
 		
 		System.out.println("" + makerCombinationAnswer[0] + makerCombinationAnswer[1] + makerCombinationAnswer[2] + makerCombinationAnswer[3]);
-		System.out.println(" ");
+		System.out.println("");
 		System.out.println("The maker has made a combination");
 		System.out.println("Red = 1. " + "Blue = 2. " + "Yellow = 3. " + "Purple = 4. " + "Green = 5. " + "Orange = 6. ");
 		System.out.println("Place a colour you want by pressing the number");
@@ -59,8 +59,7 @@ public class Flowchart_mastermind {
 				if (verify == makerCombinationAnswer[i]) {
 					checkSpaces[i] = white;
 					
-				} else { 
-					if (verify == makerCombinationAnswer[0] || verify == makerCombinationAnswer[1] || verify == makerCombinationAnswer[2] || verify == makerCombinationAnswer[3]) {
+				} else if (verify == makerCombinationAnswer[0] || verify == makerCombinationAnswer[1] || verify == makerCombinationAnswer[2] || verify == makerCombinationAnswer[3]) {
 						checkSpaces[i] = black;
 						
 					} else { 
@@ -68,7 +67,7 @@ public class Flowchart_mastermind {
 
 					}
 
-				} 
+				
 			}
 			
 			System.out.println("8 is white and 7 is black");
