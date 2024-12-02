@@ -36,14 +36,17 @@ public class Flowchart_mastermind {
 			for (int i = 0; i < breakerSpaces.length; i++) {
 				String in = input.next();
 				int loopInput = Integer.parseInt(in);
-
-				if (loopInput >= 6) {
-					loopInput = 6;
-				} else if (loopInput <= 1) {
-					loopInput = 1;
+				
+				switch (loopInput) {
+				case 1: case 2: case 3: case 4: case 5: case 6:
+					breakerSpaces[i] = loopInput;
+					break;
+			    default: 
+			    	breakerSpaces[i] = 6;
+			    	System.out.println("Invalid input, changing it to 6");
 				}
-				breakerSpaces[i] = loopInput;
 			}
+			
 			System.out.println("" + breakerSpaces[0] + breakerSpaces[1] + breakerSpaces[2] + breakerSpaces[3]);
 
 			int[] checkSpaces = { -1, -1, -1, -1 };
@@ -66,8 +69,6 @@ public class Flowchart_mastermind {
 						checkSpaces[i] = empty;
 
 					}
-
-				
 			}
 			
 			System.out.println("8 is white and 7 is black");
