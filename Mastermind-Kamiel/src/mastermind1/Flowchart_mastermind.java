@@ -59,6 +59,19 @@ public class Flowchart_mastermind {
 				randomnum = rand.nextInt(4);
 				check = breakerSpaces[randomnum];
 				
+				switch (breakerSpaces[i]) {
+
+				}
+				
+				switch (verify) {
+				    case makerCombinationAnswer[0]:
+				    case makerCombinationAnswer[1]:
+				    case makerCombinationAnswer[2]:
+				    case makerCombinationAnswer[3]:
+				    	
+				    	checkSpaces[i] = black;
+				        break;
+				}
 				if (verify == makerCombinationAnswer[i]) {
 					checkSpaces[i] = white;
 					
@@ -67,7 +80,7 @@ public class Flowchart_mastermind {
 						
 					} else { 
 						checkSpaces[i] = empty;
-
+						
 					}
 			}
 			
