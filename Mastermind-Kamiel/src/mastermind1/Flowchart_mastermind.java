@@ -34,6 +34,7 @@ public class Flowchart_mastermind {
 		do {
 
 			for (int i = 0; i < breakerSpaces.length; i++) {
+			
 				String in = input.next();
 				int loopInput = Integer.parseInt(in);
 				
@@ -58,20 +59,9 @@ public class Flowchart_mastermind {
 				verify = breakerSpaces[i];
 				randomnum = rand.nextInt(4);
 				check = breakerSpaces[randomnum];
-				
-				switch (breakerSpaces[i]) {
 
-				}
-				
-				switch (verify) {
-				    case makerCombinationAnswer[0]:
-				    case makerCombinationAnswer[1]:
-				    case makerCombinationAnswer[2]:
-				    case makerCombinationAnswer[3]:
-				    	
-				    	checkSpaces[i] = black;
-				        break;
-				}
+				checkSpaces[i] = black;
+
 				if (verify == makerCombinationAnswer[i]) {
 					checkSpaces[i] = white;
 					
