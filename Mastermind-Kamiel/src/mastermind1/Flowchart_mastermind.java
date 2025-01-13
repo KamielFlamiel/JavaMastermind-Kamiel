@@ -1,8 +1,5 @@
 package mastermind1;
 
-import java.util.Scanner;
-import java.util.Random;
-
 public class Flowchart_mastermind {
 
 	public static void main(String[] args) {
