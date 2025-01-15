@@ -75,11 +75,12 @@ public class Mastermind_functie {
 			if (checkSpaces[0] == white && checkSpaces[1] == white && checkSpaces[2] == white
 					&& checkSpaces[3] == white) {
 				System.out.println("Breaker wins.");
-			
+				
+				System.exit(0);
 				return true;
 			}
 		
 		return false;
 		
-	}
+	}	
 }
