@@ -72,20 +72,14 @@ public class Mastermind_functie {
 	
 	public boolean victorycheck(int[] checkSpaces)
 	{
-		if (checkSpaces[0] == white && checkSpaces[1] == white && checkSpaces[2] == white
-				&& checkSpaces[3] == white) {
-			System.out.println("Breaker wins.");
+			if (checkSpaces[0] == white && checkSpaces[1] == white && checkSpaces[2] == white
+					&& checkSpaces[3] == white) {
+				System.out.println("Breaker wins.");
 			
-			 boolean trueOrFalse = true;
-			 break;
-			 return trueOrFalse;
-		}
-
-		else {
-			
-			boolean trueOrfalse = false;
-			return trueOrfalse;
+				return true;
+			}
 		
-		}
+		return false;
+		
 	}
 }
