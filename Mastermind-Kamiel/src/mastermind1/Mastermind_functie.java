@@ -77,6 +77,7 @@ public class Mastermind_functie {
 			System.out.println("Breaker wins.");
 			
 			 boolean trueOrFalse = true;
+			 break;
 			 return trueOrFalse;
 		}
 
