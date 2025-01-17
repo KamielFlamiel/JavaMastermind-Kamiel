@@ -47,7 +47,7 @@ public class Mastermind_functie {
 		int[] checkSpaces = { -1, -1, -1, -1 };
 		int randomnum = rand.nextInt(4);
 		int check = breakerSpaces[randomnum];
-		int verify;
+		int verify;	
 		
 		for (int i = 0; i < checkSpaces.length; i++) {
 			verify = breakerSpaces[i];
