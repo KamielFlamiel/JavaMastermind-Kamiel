@@ -18,7 +18,6 @@ public class Flowchart_mastermind {
 		System.out.println("Try to guess the Maker's combination");
 
 		do {
-			// Deze do while moet nog een for loop worden
 
 			int[] breakerSpaces = function.inputcode();
 			
@@ -43,5 +42,4 @@ public class Flowchart_mastermind {
 		System.out.println("Out of turns, Maker wins");
 
 	}
-
 }
