@@ -40,6 +40,7 @@ public class Flowchart_mastermind {
 		} while (round < 10);
 		
 		System.out.println("Out of turns, Maker wins");
+		System.out.println("" + makerCombinationAnswer[0] + makerCombinationAnswer[1] + makerCombinationAnswer[2] + makerCombinationAnswer[3]);
 
 	}
 }

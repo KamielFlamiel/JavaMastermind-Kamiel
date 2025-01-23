@@ -28,7 +28,13 @@ public class Mastermind_functie {
 		for (int i = 0; i < breakerSpaces.length; i++) {
 			
 			String in = input.next();
-			int loopInput = Integer.parseInt(in);
+			int loopInput =-1;
+			try {
+				loopInput = Integer.parseInt(in);
+			}catch(Exception ex) {
+				
+				System.out.println(ex);
+			}
 			
 			switch (loopInput) {
 			case 1: case 2: case 3: case 4: case 5: case 6:
@@ -50,7 +56,7 @@ public class Mastermind_functie {
 		int verify;	
 		
 		for (int i = 0; i < checkSpaces.length; i++) {
-			verify = breakerSpaces[i];
+			verify = breakerSpaces[i]; 
 			randomnum = rand.nextInt(4);
 			check = breakerSpaces[randomnum];
 
