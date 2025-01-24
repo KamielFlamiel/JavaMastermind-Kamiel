@@ -40,12 +40,11 @@ public class Mastermind_functie {
 					if (loopInput >= 1 && loopInput <= 6) {
 						breakerSpaces[i] = loopInput;
 						validInput = true; 
-					} else {
-						System.out.println("Invalid input, please choose a number between 1 and 6.");
-					}
+					} 
 					
 				}catch(Exception ex) {
 					System.out.println(ex);
+					System.out.println("Invalid input, please choose a number between 1 and 6.");
 				}
 				
 				switch (loopInput) {
