@@ -26,24 +26,37 @@ public class Mastermind_functie {
 	public int[] inputcode()
 	{
 		for (int i = 0; i < breakerSpaces.length; i++) {
+			boolean validInput = false;
 			
-			String in = input.next();
-			int loopInput =-1;
-			try {
-				loopInput = Integer.parseInt(in);
-			}catch(Exception ex) {
+			
+			while (!validInput) {
 				
-				System.out.println(ex);
+				String in = input.next();
+				int loopInput =-1;
+				
+				try {
+					loopInput = Integer.parseInt(in);
+					
+					if (loopInput >= 1 && loopInput <= 6) {
+						breakerSpaces[i] = loopInput;
+						validInput = true; 
+					} else {
+						System.out.println("Invalid input, please choose a number between 1 and 6.");
+					}
+					
+				}catch(Exception ex) {
+					System.out.println(ex);
+				}
+				
+				switch (loopInput) {
+				case 1: case 2: case 3: case 4: case 5: case 6:
+					breakerSpaces[i] = loopInput;
+					break;
+			    default: 
+			    	breakerSpaces[i] = 6;
+				}
 			}
 			
-			switch (loopInput) {
-			case 1: case 2: case 3: case 4: case 5: case 6:
-				breakerSpaces[i] = loopInput;
-				break;
-		    default: 
-		    	breakerSpaces[i] = 6;
-		    	System.out.println("Invalid input, changing it to 6");
-			}
 		}
 		return breakerSpaces;
 	}
